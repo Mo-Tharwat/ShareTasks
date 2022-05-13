@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- 1- Bootstrap v 5.01 -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- 2- Font Awesome v 6.1.1 -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- 3- Style Sheet -->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Web Template</title>
+    </head>
+    <body>
+        <header class="homeSection vh-100 position-relative" id="homeSection">
+            <!-- Layer -->
+            <div class="layer w-100 h-100 d-flex justify-content-center align-items-center position-relative">
+                <!-- Navbar -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                    <div class="container-fluid">
+                        <!-- Log -->
+                        <div class="log w-25 py-1">
+                            <a class="navbar-brand" href="index.html">
+                            <img src="images/logo-white.png" alt="log">
+                            </a>
+                        </div>
+                    
+                        <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse w-75 " id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto">
+
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link  text-capitalize" aria-current="page" href="index.html">home</a>
+                                </li>
+
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-capitalize" href="#about">about</a>
+                                </li>
+
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-capitalize" href="#team">team</a>
+                                </li>
+
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link text-capitalize" href="#projects">projects</a>
+                                </li>
+
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link   text-capitalize" href="#services">services</a>
+                                </li>
+
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link   text-capitalize" href="#blog">blog</a>
+                                </li>
+
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link   text-capitalize" href="#contact">contact</a>
+                                </li>
+                                <li class="nav-item my-2 ">
+                                    <a class="px-2 text-light" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a class="px-2 text-light" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a class="px-2 text-light" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Icon Home -->
+                <div class="iconHome">
+                    <!-- aside -->
+                    <aside class="position-fixed bg-dark d-flex justify-content-center align-items-center">
+                            <a class="text-light" href="#">
+                                <i class="fa-solid fa-gear fa-spin"></i>
+                            </a>
+                    </aside>
+                    <!-- upIcon -->
+                    <a href="#about">
+                        <div class="upIcon rounded-pill position-absolute start-50 translate-middle-x">
+                            <div class="bigPoint fa-bounce "></div>
+                        </div>
+                    </a>
+
+            </div>
+
+            </div>
+            <!-- Error-----------------------  -->
+            <!-- Silder Content -->
+            <div id="carouselCaptionsHomeSection" class="carousel slide carousel-fade position-absolute start-0 top-0 end-0 bottom-0 position-relative" data-bs-ride="carousel">
+
+                <div class="carousel-inner position-absolute start-0 end-0 top-0 bottom-0 ">
+                  <div class="carousel-item active ">
+                    <img src="images/slideshow-1.jpg" class="d-block w-100 h-100" alt="slideshow1">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h1>Focused on strategy.</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slideshow-2.jpg" class="d-block w-100 h-100" alt="slideshow2">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h1>We build great brands.</h1>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="images/slideshow-3.jpg" class="d-block w-100 h-100" alt="slideshow3">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h1>Advanced in digital works.</h1>
+                    </div>
+                  </div>
+
+                </div>
+                
+                <button class="carousel-control-prev " type="button" data-bs-target="#carouselCaptionsHomeSection" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptionsHomeSection" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+        </header>
+        <!-- Start Section About -->
+        <section class=" aboutSection py-5" id="about">
+            <!-- Content Title -->
+            <div class="container m-auto py-3 ">
+                <div class="row pb-4">
+                    <!-- Section title -->
+                    <div class="sectionTitle text-center position-relative">
+                        <h2 class=" text-capitalize" data-bigletter="a">About Us</h2>
+                        <p class="m-auto text-muted">Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Pellentesque elementum libero enim.</p>
+                    </div>
+                </div>
+                <div class="container py-3 ">
+                    <div class="row  g-3 align-items-center justify-content-center">
+                        <!-- first section 1 -->
+                        <div class="col-md-7">
+                            <p>
+                                Pellentesque vel elit egestas, pretium est ac, convallis orci. Vivamus sem nisl, tristique vel fringilla vitae, efficitur at eros. Duis aliquet aliquet pharetra. Suspendisse bibendum erat quis gravida pulvinar. Phasellus vel eros porta, blandit dui ac,viverra felis.
+                            </p>
+
+                            <p>
+                                Nunc placerat iaculis pulvinar. Nullam auctor mauris sed urna posuere volutpat. Mauris ut dui sit amet elit fermentum fermentum. Fusce tincidunt diam at bibendum porta.
+                            </p>
+        
+                            <p>
+                                Aliquam nunc felis, sagittis eu purus non, interdum vehicula urna. Vivamus congue diam sapien, eu pellentesque ipsum ultricies quis.
+                            </p>
+
+                        </div>
+                        <!-- second section 2 -->
+                        <div class="col-md-5">
+                            <!-- Skills -->
+                            <div class="skills">
+        
+                                <!-- Progress Section 1 -->
+                                <div class="progressSection ">
+                                    <div class="progressHeading-1">
+                                        <p class="progress-title m-0  text-start fw-bold">Branding</p>
+                                        <div class="progress-value text-end" style="width: 80%; opacity: 1;">80%</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-value="80" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+        
+                                <!-- Progress 2 -->
+                                <div class="progressSection">
+                                    <div class="progressHeading-2">
+                                        <p class="progress-title m-0 pt-3 text-start fw-bold">Web Design</p>
+                                        <div class="progress-value text-end" style="width: 95%; opacity: 1;">95%</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-value="95" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+        
+                                <!-- Progress 3 -->
+                                <div class="progressSection">
+                                    <div class="progressHeading-3">
+                                        <p class="progress-title m-0 pt-3 text-start fw-bold">Graphic Design</p>
+                                        <div class="progress-value text-end" style="width: 85%; opacity: 1;">85%</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-value="85" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+        
+                                <!-- Progress 4 -->
+                                <div class="progressSection">
+                                    <div class="progressHeading-4">
+                                        <p class="progress-title m-0 pt-3 text-start fw-bold">Development</p>
+                                        <div class="  progress-value text-end" style="width: 70%; opacity: 1;">70%</div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar " data-value="70" style="width: 70%;"></div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section About -->
+        <!-- Start Section Our Team -->
+        <section class="ourTeam py-5" id="team">
+            <!-- Content Title -->
+            <div class="container m-auto py-3 ">
+                <div class="row pb-4">
+                    <!-- Section title -->
+                    <div class="sectionTitle text-center position-relative">
+                        <h2 class=" text-capitalize" data-bigletter="o">Our Team</h2>
+                        <p class="m-auto text-muted">Vestibulum ante ipsum primis in faucibus orci. Morbi tincidunt urna imperdiet tincidunt rhoncus. Sed mollis ligula non massa aliquam faucibus.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- portfolio team -->
+            <div class="container m-auto py-3">
+                <div class="row">
+
+                    <div class="col-lg-3">
+                        <div class="teamImg position-relative">
+                            <img class="w-100 rounded-1" src="images/member-1.jpg" alt="Michael Broad - img">
+                            <div class="teamSocial position-absolute start-0 top-0 bottom-0 end-0 rounded-1 d-flex justify-content-center align-items-center">
+                                <div class="socialContent">
+                                    <a href="#"><i class="fab fa-twitter text-light pe-2"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f text-light pe-2"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in text-light pe-2"></i></a>
+                                    <a href="#"><i class="fab fa-dribbble text-light pe-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content text-center pt-2">
+                            <h5 class="nameMember text-muted">Michael Broad</h5>
+                            <span class="title">Web Designer</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="teamImg position-relative">
+                            <img class="w-100 rounded-1" src="images/member-2.jpg" alt="Michael Broad - img">
+                            <div class="teamSocial position-absolute start-0 top-0 bottom-0 end-0 rounded-1 d-flex justify-content-center align-items-center">
+                                <div class="socialContent">
+                                    <a href="#"><i class="fab fa-twitter text-light pe-2"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f text-light pe-2"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in text-light pe-2"></i></a>
+                                    <a href="#"><i class="fab fa-dribbble text-light pe-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content text-center pt-2">
+                            <h5 class="nameMember text-muted">Jeannette Crow</h5>
+                            <span class="title">CEO Founder</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="teamImg position-relative">
+                            <img class="w-100 rounded-1" src="images/member-3.jpg" alt="Michael Broad - img">
+                            <div class="teamSocial position-absolute start-0 top-0 bottom-0 end-0 rounded-1 d-flex justify-content-center align-items-center">
+                                <div class="socialContent">
+                                    <a href="#"><i class="fab fa-twitter text-light pe-2"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f text-light pe-2"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in text-light pe-2"></i></a>
+                                    <a href="#"><i class="fab fa-dribbble text-light pe-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content text-center pt-2">
+                            <h5 class="nameMember text-muted">CEO Founder</h5>
+                            <span class="title">App Developer</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="teamImg position-relative">
+                            <img class="w-100 rounded-1" src="images/member-4.jpg" alt="Michael Broad - img">
+                            <div class="teamSocial position-absolute start-0 top-0 bottom-0 end-0 rounded-1 d-flex justify-content-center align-items-center">
+                                <div class="socialContent">
+                                    <a href="#"><i class="fab fa-twitter text-light pe-2"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f text-light pe-2"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in text-light pe-2"></i></a>
+                                    <a href="#"><i class="fab fa-dribbble text-light pe-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content text-center pt-2">
+                            <h5 class="nameMember text-muted">Isabella Dowson</h5>
+                            <span class="title">Creative Director</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Section Our Team -->
+        <!-- Start Section ideas -->
+        <section class="ideas py-2">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="qa col-lg-8">
+                        <h3 class="lowercase">Do you have any ideas?</h3>
+                    </div>
+                    <div class="btnGo col-lg-3">
+                        <a href="#contact" class="btn btn-danger">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section ideas -->
+        <!-- Start Section services -->
+        <section class="services py-5" id="services">
+            <!-- Content Title -->
+            <div class="container m-auto py-3 ">
+                <div class="row pb-4">
+                    <!-- Section title -->
+                    <div class="sectionTitle text-center position-relative">
+                        <h2 class=" text-capitalize" data-bigletter="s">services</h2>
+                        <p class="m-auto text-muted">Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Pellentesque elementum libero enim, eget gravida nunc laoreet et. Pellentesque elementum libero enim.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Services Content -->
+            <div class="container">
+                <div class="row  gy-1 justify-content-around">
+
+                    <!-- Service 1 -->
+                    <div class="col-md-4">
+                        <div class="service">
+                            <div class="row align-items-stretch">
+                                <div class="iconService text-center w-25 ">
+                                        <i class="fa-solid fa-laptop fa-xl"></i>
+                                </div>
+                                <div class="service-text w-75">
+                                    <h4>Responsive Layout</h4>
+                                    <p>
+                                        Ferri reque integre mea ut, eu eos vide errem noluise se. Putent laoreet et ius utroque dissentias ut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Service 2 -->
+                    <div class="col-md-4">
+                        <div class="service">
+                            <div class="row align-items-stretch">
+                                <div class="iconService text-center w-25 ">
+                                    <i class="fa-solid fa-pen-ruler fa-xl"></i>
+                                </div>
+                                <div class="service-text w-75">
+                                    <h4>Modern Design</h4>
+                                    <p>
+                                        Ferri reque integre mea ut, eu eos vide errem noluise se. Putent laoreet et ius utroque dissentias ut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Service 3 -->
+                    <div class="col-md-4">
+                        <div class="service">
+                            <div class="row align-items-stretch">
+                                <div class="iconService text-center w-25 ">
+                                    <i class="fa-solid fa-font-awesome fa-xl"></i>
+                                </div>
+                                <div class="service-text w-75">
+                                    <h4>Font Awesome Icons</h4>
+                                    <p>
+                                        Ferri reque integre mea ut, eu eos vide errem noluise se. Putent laoreet et ius utroque dissentias ut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="col-md-4">
+                        <div class="service">
+                            <div class="row align-items-stretch">
+                                <div class="iconService text-center w-25 ">
+                                    <i class="fa-solid fa-id-card fa-xl"></i>
+                                </div>
+                                <div class="service-text w-75">
+                                    <h4>Ajax Portfolio</h4>
+                                    <p>
+                                        Ferri reque integre mea ut, eu eos vide errem noluise se. Putent laoreet et ius utroque dissentias ut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="col-md-4">
+                        <div class="service">
+                            <div class="row align-items-stretch">
+                                <div class="iconService text-center w-25 ">
+                                    <i class="fa-solid fa-gear fa-xl"></i>
+                                </div>
+                                <div class="service-text w-75">
+                                    <h4>Color Options</h4>
+                                    <p>
+                                        Ferri reque integre mea ut, eu eos vide errem noluise se. Putent laoreet et ius utroque dissentias ut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="col-md-4">
+                        <div class="service">
+                            <div class="row align-items-stretch">
+                                <div class="iconService text-center w-25 ">
+                                    <i class="fa-solid fa-headset fa-xl"></i>
+                                </div>
+                                <div class="service-text w-75">
+                                    <h4>Audio Support</h4>
+                                    <p>
+                                        Ferri reque integre mea ut, eu eos vide errem noluise se. Putent laoreet et ius utroque dissentias ut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 7 -->
+                    <div class="col-md-4">
+                        <div class="service">
+                            <div class="row align-items-stretch">
+                                <div class="iconService text-center w-25 ">
+                                    <i class="fa-solid fa-list-check fa-xl"></i>
+                                </div>
+                                <div class="service-text w-75">
+                                    <h4>Well Documented</h4>
+                                    <p>
+                                        Ferri reque integre mea ut, eu eos vide errem noluise se. Putent laoreet et ius utroque dissentias ut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 8 -->
+                    <div class="col-md-4">
+                        <div class="service">
+                            <div class="row align-items-stretch">
+                                <div class="iconService text-center w-25 ">
+                                    <i class="fa-solid fa-video fa-xl"></i>
+                                </div>
+                                <div class="service-text w-75">
+                                    <h4>Background Videos</h4>
+                                    <p>
+                                        Ferri reque integre mea ut, eu eos vide errem noluise se. Putent laoreet et ius utroque dissentias ut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 9 -->
+                    <div class="col-md-4">
+                        <div class="service">
+                            <div class="row align-items-stretch">
+                                <div class="iconService text-center w-25 ">
+                                    <i class="fa-solid fa-sliders fa-xl"></i>
+                                </div>
+                                <div class="service-text w-75">
+                                    <h4>Intro Slider</h4>
+                                    <p>
+                                        Ferri reque integre mea ut, eu eos vide errem noluise se. Putent laoreet et ius utroque dissentias ut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+        </section>
+        <!-- End Section services -->
+        <!-- Start Section client reviews -->
+        <section class="clientReviews py-5">
+            <!-- Content Title -->
+            <div class="container m-auto py-3 ">
+                <div class="row pb-4">
+                    <!-- Section title -->
+                    <div class="sectionTitle text-center position-relative">
+                        <h2 class=" text-capitalize" data-bigletter="c">Client Reviews</h2>
+                        <p class="m-auto text-muted">Donec purus est, tincidunt eu sodales quis, vehicula quis enim. Morbi dapibus, tellus a gravida faucibus, elit ipsum sollicitudin risus, id ultricies arcu neque eget velit.</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <!-- testimonial slider -->
+                        <div id="carouselTestimonial" class="carouselTestimonial carousel slide" data-bs-ride="carousel">
+                            
+                            <div class="carousel-indicators position-static d-flex justify-content-center align-items-center m-3">
+                              <button  type="button" data-bs-target="#carouselTestimonial"
+                              data-bs-slide-to="0" class="btnTestimonial active" aria-current="true" aria-label="Slide 1">
+
+                                <img class="rounded-circle w-100" src="images/client-1.png" alt="clientfeeback">
+
+                                </button>
+
+                              <button type="button" data-bs-target="#carouselTestimonial"
+                              data-bs-slide-to="1" aria-label="Slide 2" class="btnTestimonial">
+
+                                <img class="rounded-circle w-100" src="images/client-2.png" alt="clientfeeback">
+
+                                </button>
+
+                              <button type="button" data-bs-target="#carouselTestimonial"
+                              data-bs-slide-to="2" aria-label="Slide 3" class="btnTestimonial">
+
+                                <img class="rounded-circle w-100" src="images/client-3.png" alt="clientfeeback">
+
+                                </button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <p><i class="fas fa-quote-left"></i> Aenean sit amet est orci. Aenean at nisi eget nulla lobortis commodo. Nam eget lorem in ex aliquam dapibus.
+                                    <i class="fas fa-quote-right"></i></p>
+                              </div>
+                              <div class="carousel-item">
+                                <p><i class="fas fa-quote-left"></i> Aenean sit amet est orci. Aenean at nisi eget nulla lobortis commodo. Nam eget lorem in ex aliquam dapibus.
+                                    <i class="fas fa-quote-right"></i></p>
+                              </div>
+                              <div class="carousel-item">
+                                <p><i class="fas fa-quote-left"></i> Aenean sit amet est orci. Aenean at nisi eget nulla lobortis commodo. Nam eget lorem in ex aliquam dapibus.
+                                    <i class="fas fa-quote-right"></i></p>
+                              </div>
+                            </div>
+                          </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End Section client reviews -->
+        <!-- Start Section contact us -->
+        <section class="contactUs py-5" id="contact">
+            <!-- Content Title -->
+            <div class="container m-auto py-3 ">
+                <div class="row pb-4">
+                    <!-- Section title -->
+                    <div class="sectionTitle text-center position-relative">
+                        <h2 class=" text-capitalize" data-bigletter="g">Get In Touch</h2>
+                        <p class="m-auto text-muted">Mauris at tempus mi, ut iaculis dui. Integer laoreet mattis justo nec pretium. Ut nibh elit, fermentum vel hendrerit vel, dictum nec velit. Morbi volutpat suscipit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- contact us - info part-->
+            <div class="contanier">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-6">
+                        <div class="infoContact">
+                            <div class="container">
+                                <div class="row g-1">
+                                    <div class="col-md-12">
+                                        <h3 class="text-capitalize">Get answers and advices from professional consultants.</h3>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="container-fluid">
+                                            <div class="row align-items-stretch">
+                                                <!-- Address -->
+                                                <div class="sizeIcon">
+                                                    <div class="icon text-center">
+                                                        <i class="fa-solid fa-map fa-xl"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="sizeText">
+                                                    <div class="text">
+                                                        <h4 class="text-capitalize">address</h4>
+                                                        <p>1650 Lombard Street, San Francisco, CA 94123</p>
+                                                    </div>
+                                                </div>
+                                                <div class="border-top p-1"></div>
+                                                <!-- Phone -->
+                                                <div class="sizeIcon">
+                                                    <div class="icon text-center">
+                                                        <i class="fa-solid fa-map fa-xl"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="sizeText">
+                                                    <div class="text">
+                                                        <h4 class="text-capitalize">phone</h4>
+                                                        <p>+1 (415) 876-3250 / +1 (415) 876-3251</p>
+                                                    </div>
+                                                </div>
+                                                <div class="border-top p-1"></div>
+                                                <!-- say hello -->
+                                                <div class="sizeIcon">
+                                                    <div class="icon text-center">
+                                                        <i class="fa-solid fa-map fa-xl"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="sizeText">
+                                                    <div class="text">
+                                                        <h4 class="text-capitalize">say hello</h4>
+                                                        <p>
+                                                            <a href="/cdn-cgi/l/email-protection#e4c7">
+                                                                <span class="__cf_email__" data-cfemail="e2878f838b8ea2918b96878c838f87cc818d8f">[email&nbsp;protected]</span>
+                                                            </a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container">
+                            <div class="row">
+                                <form action="post">
+                                    <div class="mb-4">
+                                        <input type="text" class="form-control" placeholder="Full Name" id="name" aria-describedby="fullName">
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="email" class="form-control" placeholder="Email" id="email" aria-describedby="emailform">
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="number" class="form-control" placeholder="Phone" id="phone" aria-describedby="phoneform">
+                                    </div>
+                                    <div class="mb-4">
+                                        <textarea name="message" class="form-control" placeholder="Message"></textarea>
+                                    </div>
+    
+                                    <!-- Submit Button -->
+                                    <div>
+                                        <button type="submit" class="btn btn-danger" id="contact-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section contact us -->
+        <!-- Start footer section -->
+        <footer class="py-5">
+            <div class="footerBody">
+                <!-- back to home section -->
+                <div class="container-fluid">
+                    <div class="row justify-content-center ">
+                        <div class="icon text-center ">
+                            <!-- back to top -->
+                            <a class="to-top text-light" href="#homeSection">
+                                <i class="fas fa-chevron-up fa-beat-fade"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Log Icon -->
+                <div class="container-fluid">
+                    <div class="row justify-content-center ">
+                        <div class="log">
+                            <div class="img">
+                                <a href="#"> <img class="" src="images/icon.png" alt="log-footer"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content -->
+                <div class="container">
+    
+                    <div class="py-4"></div>
+    
+                    <div class="row">
+    
+                        <!-- Contact info -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="text-start">
+    
+                                <h5 class="text-light text-muted">Contact Info</h5>
+    
+                                <div class="text-light">
+                                    <p>
+                                        1650 Lombard Street,<br> San Francisco, CA 94123
+                                    </p>
+                                    <p>
+                                        +1 (415) 876-3250<br>
+                                        <a href="/cdn-cgi/l/email-protection#adc8c0ccc4c1eddec4d9c8c3ccc0c883cec2c0"><span class="__cf_email__" data-cfemail="7a1f171b13163a09130e1f141b171f54191517">[email&nbsp;protected]</span></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Useful links -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="text-start">
+    
+                                <h5 class="text-light text-muted">Useful Links</h5>
+    
+                                <ul class="footer-menu">
+                                    <li class="list-unstyled"><a class="text-decoration-none text-light" href="#">Support</a></li>
+                                    <li class="list-unstyled"><a class="text-decoration-none text-light" href="#">Privacy Policy</a></li>
+                                    <li class="list-unstyled"><a class="text-decoration-none text-light" href="#">Terms &amp; Conditions</a></li>
+                                    <li class="list-unstyled"><a class="text-decoration-none text-light" href="#">Affiliate Program</a></li>
+                                    <li class="list-unstyled"><a class="text-decoration-none text-light" href="#">Careers</a></li>
+                                </ul>
+    
+                            </div>
+                        </div>
+    
+                        <!-- Recent posts -->
+                        <div class="col-md-3 col-sm-6 res-margin">
+                            <div class="text-light">
+    
+                                <h5 class="text-light text-muted">Recent Posts</h5>
+    
+                                <ul class="footer-menu">
+                                    <li class="list-unstyled"><a class="text-decoration-none text-light" href="#">Sunset in Venice</a></li>
+                                    <li class="list-unstyled"><a class="text-decoration-none text-light" href="#">Aerial View of Village</a></li>
+                                    <li class="list-unstyled"><a class="text-decoration-none text-light" href="#">Lighted Concrete City</a></li>
+                                    <li class="list-unstyled"><a class="text-decoration-none text-light" href="#">The Little Ghost</a></li>
+                                    <li class="list-unstyled"><a class="text-decoration-none text-light" href="#">Royal Oats ft. Waldo</a></li>
+                                </ul>
+    
+                            </div>
+                        </div>
+    
+                        <!-- Tag cloud -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="text-light">
+    
+                                <h5 class="text-light text-muted">Popular Tags</h5>
+    
+                                <div class="tags pb-2">
+                                    <a href="#" class="btn btn-outline-danger m-1 text-light fw-light">HTML5</a>
+                                    <a href="#" class="btn btn-outline-danger m-1 text-light fw-light">CSS3</a>
+                                    <a href="#" class="btn btn-outline-danger m-1 text-light fw-light">jQuery</a>
+                                    <a href="#" class="btn btn-outline-danger m-1 text-light fw-light">UX / UI</a>
+                                    <a href="#" class="btn btn-outline-danger m-1 text-light fw-light">Web</a>
+                                    <a href="#" class="btn btn-outline-danger m-1 text-light fw-light">Graphic</a>
+                                    <a href="#" class="btn btn-outline-danger m-1 text-light fw-light">Design</a>
+                                    <a href="#" class="btn btn-outline-danger m-1 text-light fw-light">Development</a>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="lowFooter w-100 h-100">
+                <!-- footer footer -->
+                <div class="container-fluid">
+                    <div class="row justify-content-center ">
+                        <div class="content">
+                            <div class="col-md-6">
+
+                                <!-- Social links -->
+                                <div class="footer-social">
+                                    <a href="#" title="Twitter"><i class="fab fa-twitter fa-fw"></i></a>
+                                    <a href="#" title="Facebook"><i class="fab fa-facebook-f fa-fw"></i></a>
+                                    <a href="#" title="Instagram"><i class="fab fa-instagram fa-fw"></i></a>
+                                    <a href="#" title="Dribbble"><i class="fab fa-dribbble fa-fw"></i></a>
+                                    <a href="#" title="Pinterest"><i class="fab fa-pinterest fa-fw"></i></a>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer section -->
+
+        <!-- bootstrap (Javascript & Popper) -->
+        <script src="js/bootstrap.bundle.min.js"></script>    
+    </body>
+</html>

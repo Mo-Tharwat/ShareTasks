@@ -1,0 +1,303 @@
+/* Fonts Family*/
+/* Regular */
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+/* Bold */
+@font-face {
+    font-family: PoppinsBold;
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+
+/* Varable */
+:root{
+    /* Font Family */
+    --font-regular:Poppins;
+    --font-bold:PoppinsBold;
+
+    /* Colors */
+    --hover-color: #f25454;
+    --footer-color1:#222222;
+    --footer-color2:#1A1A1A;
+    --container-color: #F9F7F7;
+    --layer-color:rgba(0,0,0,0.2);
+
+    /* Background images */
+    --home-section-image1:url('../images/slideshow-1.jpg');
+    --home-section-image2:url('../images/slideshow-2.jpg');
+    --home-section-image3:url('../images/slideshow-3.jpg');
+    --log-footer:url('../images/icon.png');
+}
+/* Basic Tags */
+html {
+    font-family: var(--font-regular)!important;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family:var(--font-bold)!important;
+    color: #282828;
+    font-weight: 600;
+}
+/* universel selector */
+*{
+    box-sizing: border-box;
+    /* background-color:#FFFFFF; */
+}
+
+/* Start Home Section -- Header */
+/* header {
+    background-image: var(--home-section-image);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+/* Log size */
+nav .log a img{
+    width: 150px;
+}
+/* layer */
+header .layer{
+    background-color: var(--layer-color);
+    z-index: 9;
+}
+/* navbar */
+header .layer nav .navbar-nav .nav-item a:hover{
+    color: var(--hover-color)!important;
+}
+/* aside */
+header .layer .iconHome aside{
+    top: 20%;
+    left: 0%;
+    width: 30px;
+    height: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+header .layer .iconHome aside:hover{
+    background-color: #434343 !important;
+}
+
+header .layer .iconHome a .upIcon{
+    width: 30px;
+    height: 50px;
+    border: 2px solid white !important;
+    bottom: 5%;
+    position: relative;
+    --fa-animation-duration: 1s;
+}
+header .layer .iconHome a .upIcon .bigPoint{
+    width:10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    --fa-animation-duration: 3s;
+}
+
+header .layer .iconHome a .upIcon:hover{
+    border-color:var(--hover-color)!important;
+}
+header .carousel{
+    z-index: 1;
+}
+
+header .carousel .carousel-inner .carousel-item{
+    --fa-beat-fade-opacity: 0.1
+    --fa-beat-fade-scale: 1.25;
+    transition:1s .5s all ;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+header h1 {
+    color:white !important;
+}
+header .carousel-caption {
+    position: absolute;
+    right: unset;
+    bottom: unset;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    /* padding-top: 1.25rem; */
+    /* padding-bottom: 1.25rem; */
+    color: #fff;
+    text-align: center;
+}
+/* ----------------------------------------------------- */
+/* About Section */
+/* Content Title any section*/
+section .sectionTitle h2{
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 700;    
+}
+section .sectionTitle h2::before{
+    content: attr(data-bigletter);
+    position: absolute;
+    /* background-color: red; */
+    font-size: 2em;
+    opacity: .08;
+    top: -0.17em;
+    left: 20%;
+    right: 20%;
+    margin: auto;
+    text-transform: uppercase;
+}
+section .sectionTitle h2::after{
+    content:'';
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height:2px;
+    top: 30%;
+    left: 50%;
+    right: 50%;
+    transform:translate(-50%, -50%);
+    transition: 1s all;
+}
+section .sectionTitle:hover h2::after{
+    width: 100px;
+}
+/* second row */
+/* part1 */
+section .sectionTitle p {
+    font-size: 18px;
+    color: #999;
+    margin: 5rem 0;
+    max-width: 60%;
+    padding-top: 2rem; 
+}
+/* part2 Skills */
+
+.aboutSection .skills .progressSection .progress{
+    height: 5px;
+}
+.aboutSection .skills .progressSection .progress-bar{
+    background-color:var(--hover-color);
+    height: 5px;
+    border-radius: 5px;
+}
+.aboutSection .skills .progressSection .progressHeading-1 p{
+    width: 80%;
+    margin-bottom: -1.2rem !important;
+}
+.aboutSection .skills .progressSection .progressHeading-2 p{
+    width: 95%;
+    margin-bottom: -1.2rem !important;
+}
+.aboutSection .skills .progressSection .progressHeading-3 p{
+    width: 83%;
+    margin-bottom: -1.2rem !important;
+}
+.aboutSection .skills .progressSection .progressHeading-4 p{
+    width: 70%;
+    margin-bottom: -1.2rem !important;
+}
+/* ----------------------------------------------------- */
+/* Our Team Section */
+/* portfolio team */
+.ourTeam .teamImg .teamSocial{
+    background-color: var(--hover-color);
+    opacity: 0;
+    transition: 1s all;
+}
+.ourTeam .teamImg:hover .teamSocial{
+    opacity: .8;
+}
+/* Error----------------------- */
+.ourTeam .teamImg:hover h5{
+    color: var(--hover-color)!important;
+}
+/* ----------------------------------------------------- */
+/* ideas Section */
+.ideas .qa h3{
+    font-family: var(--font-regular)!important;
+    font-weight: 500;
+    
+}
+.ideas .btnGo a{
+    padding-left:2rem !important;
+    padding-right:2rem !important;
+    /* color:var(--hover-color)!important; */
+}
+/* ----------------------------------------------------- */
+/* services Section */
+.services .service .iconService i{
+    color:var(--hover-color)!important;
+}
+
+.services .service .service-text h4{
+    transition: 0.5s all;
+}
+.services .service:hover .service-text h4{
+    color:var(--hover-color)!important;
+}
+/* ----------------------------------------------------- */
+/* client reviews Section */
+/* .clientReviews .carouselTestimonial .carousel-indicators [data-bs-target]{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background-color: red;
+} */
+.carousel-indicators [data-bs-target]{
+    text-indent: unset;
+}
+.btnTestimonial{
+    width: 100px !important;
+    height: 100px !important;
+
+}
+
+
+
+/* ----------------------------------------------------- */
+/* contact us Section */
+/* contact us - info part */
+.contactUs .infoContact h3{
+    max-width: 80%;
+}
+.contactUs .sizeText h4{
+    transition: 0.5s all;
+}
+.contactUs .sizeText:hover h4{
+    color:var(--hover-color)!important;
+}
+.contactUs .infoContact .sizeIcon{
+    max-width: 10%;
+    color: var(--hover-color);
+}
+.contactUs .infoContact .sizeText{
+    max-width: 90%;
+}
+/* contact us - form part */
+.contactUs form .form-control{
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+    outline: none;
+    box-shadow: none;
+}
+/* ----------------------------------------------------- */
+/* footer Section */
+footer .footerBody{
+    background-color: var(--footer-color1);
+}
+footer .footerBody .icon{
+    width:50px;
+    height: 50px;
+    background-color: var(--hover-color);
+    border-radius: 50%;
+    transform:translateY(-50%);
+    opacity: 0.8;
+}
+footer .footerBody .log{
+    width:10%;
+
+}
+footer .lowFooter{
+    background-color: var(--footer-color2);
+}
+
