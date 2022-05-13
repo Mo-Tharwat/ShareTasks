@@ -10,9 +10,9 @@
     --italic-bold:ElectroluxItalicBold; */
 
     /* Colors */
-    /* --hover-color-muted: #3F72AF;
+    --hover-color-muted: #3F72AF;
     --hover-color-warm: #FC3C3C;
-    --main-color: #112D4E;
+    /* --main-color: #112D4E;
     --container-color: #F9F7F7;
     --main-text-color:#0a1c30;
     --layer-color:rgba(0,0,0,0.6);
@@ -50,3 +50,37 @@ a:hover{
     color: var(--hover-color-muted);
 } */
 /* End Basic Tags ---------------------------------------- */
+
+/* Start Title For Any Section */
+.titleSection h2{
+    font-weight: 800 !important;
+}
+.titleSection h2::before{
+    content: attr(shadowTitle);
+    position: absolute;
+    opacity: 0.1;
+    right: 0;
+    left: 0;
+    bottom: -.1rem;
+    font-weight: 900;
+    font-size: 2em;
+    /* transform: translate(-50% -50%); */
+}
+.titleSection h2::after{
+    content:"";
+    position: absolute;
+    width: 50px;
+    height:2px;
+    background-color: var(--hover-color-warm);
+    left: 50%;
+    right: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    margin-bottom: -1rem;
+    
+}
+.titleSection:hover h2::after{
+    width: 100px;
+}
+/* End Title For Any Section ---------------------------------------- */
